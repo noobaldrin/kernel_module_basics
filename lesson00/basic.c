@@ -8,13 +8,13 @@
  * for clarity.
  */
 
-int __init basic_init(void)
+static int __init basic_init(void)
 {
 	pr_debug(DEVICE_NAME ": Module initialized!\n");
 	return 0;
 }
 
-void __exit basic_exit(void)
+static void __exit basic_exit(void)
 {
 	pr_debug(DEVICE_NAME ": Exited!\n");
 }
