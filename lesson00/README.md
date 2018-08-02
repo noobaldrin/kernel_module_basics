@@ -28,7 +28,7 @@ Do not confuse these header files with the ones inside `/usr/include/` and `/usr
 ```
 We use pr_debug for easy removal of kernel messages like the ones in the code above. More of this when we get to the Makefile topic.
 
-And now the following are the real functions that gets executed when modules are being loaded/unloaded, it uses the functions we defined earlier as their argument.
+And now the following are the macro functions that get executed when modules are loaded/unloaded, it uses the functions we defined earlier as their argument. These macros provide boilerplate code for initializing and removing kernel modules.
 
 ```c
 		module_init(basic_init);
